@@ -1,16 +1,26 @@
-# React + Vite
+So here we have built a simple project using an api : https://api.imgflip.com/get_memes
+This api brings us meme images with names and we have to display them in card and search on the basis of names.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I have used React + tailwindcss to build this project and used the file-structure given below:
 
-Currently, two official plugins are available:
+meme-search/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    public/
+        index.html
 
-## React Compiler
+    src/
+        components/
+            SearchBar.jsx
+            MemeCard.jsx
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+        App.jsx
+        App.css
+        main.jsx
+        index.css
 
-## Expanding the ESLint configuration
+    .gitignore
+    package.json
+    tailwind.config.js
+    vite.config.js
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+SearchBar.jsx is the component controlling the search and MemeCard.jsx is controlling the overall meme grid.
